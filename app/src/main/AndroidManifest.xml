@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AppKotlin"
         tools:targetApi="31">
 
-        <!-- Tela principal -->
+        <!-- tela principal -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -25,10 +25,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Tela de nova anotação -->
+        <!-- tela de nova anotação -->
         <activity android:name=".NovaAnotacaoActivity" />
 
-        <!-- Tela de edição de anotação -->
+        <!-- tela de edição -->
         <activity android:name=".EditarAnotacaoActivity" />
 
     </application>
