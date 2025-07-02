@@ -22,7 +22,7 @@ abstract class AnotacaoDatabase : RoomDatabase() {
                     "anotacoes_db"
                 )
                     .fallbackToDestructiveMigration()
-                    .allowMainThreadQueries() // Facilita testes para iniciantes, cuidado em apps reais
+                    .allowMainThreadQueries()
                     .build()
                 INSTANCE = instance
                 instance
