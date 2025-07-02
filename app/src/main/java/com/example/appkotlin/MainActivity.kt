@@ -41,13 +41,13 @@ fun ListaDeAnotacoes() {
 
     val anotacoes = remember { mutableStateListOf<Anotacao>() }
 
-    // Atualiza lista ao iniciar
+ 
     fun atualizarLista() {
         anotacoes.clear()
         anotacoes.addAll(dao.listarTodas())
     }
 
-    // Atualiza ao voltar do segundo plano (voltar da tela de criação)
+ 
     val lifecycle = LocalLifecycleOwner.current.lifecycle
     DisposableEffect(lifecycle) {
         val observer = LifecycleEventObserver { _: LifecycleOwner, event: Lifecycle.Event ->
